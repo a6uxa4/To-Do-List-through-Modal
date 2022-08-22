@@ -1,0 +1,56 @@
+.modal {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	opacity: 0;
+	pointer-events: none;
+}
+.modal.active {
+	opacity: 1;
+	pointer-events: all;
+}
+.modal__content {
+	padding: 20px;
+	border-radius: 12px;
+	background-color: white;
+	width: 300px;
+	height: 150px;
+	transform: scale(0.5);
+	transition: 0.4s all;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.modal__content.active {
+	transform: scale(1);
+}
+.ButYes {
+	width: 80px;
+	height: 25px;
+	background-color: forestgreen;
+	border-radius: 5px;
+	border: 1px solid crimson;
+	font-weight: bold;
+}
+.ButNo {
+	width: 80px;
+	height: 25px;
+	background-color: crimson;
+	border-radius: 5px;
+	border: 1px solid forestgreen;
+	font-weight: bold;
+}
+.ContYN{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
